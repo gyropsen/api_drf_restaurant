@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'restaurant_menu',
+    'drf_spectacular'
+
 ]
 
 MIDDLEWARE = [
@@ -126,4 +128,13 @@ REST_FRAMEWORK = {
         # "rest_framework.permissions.IsAuthenticated",
         'rest_framework.permissions.AllowAny',
     ),
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
+
+# SPECTACULAR SETTINGS
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Restaurant Menu API',
+    'DESCRIPTION': 'API for restaurant menu',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
