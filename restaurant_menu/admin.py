@@ -10,9 +10,9 @@ class FoodCategoryAdmin(admin.ModelAdmin):
     """
 
     list_display = (
-        'pk',
-        'name_ru',
-        'order_id',
+        "pk",
+        "name_ru",
+        "order_id",
     )
 
 
@@ -22,9 +22,4 @@ class FoodAdmin(admin.ModelAdmin):
     Класс отображения еды в админке
     """
 
-    list_display = (
-        'pk',
-        'name_ru',
-        'category',
-        'is_publish'
-    )
+    list_display = ("pk", "name_ru", "category", "is_publish")
