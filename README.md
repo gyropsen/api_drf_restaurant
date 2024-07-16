@@ -31,7 +31,7 @@
 
 5. Если необходимо загрузить фикстуру, то используйте команду:
    ```
-   docker exec -it <id контейнера> python3 manage.py loaddata <название файла>.json 
+   docker exec -it <id контейнера> python3 manage.py loaddata dumpdata.json 
    ```
 
 6. Документация доступна по ссылкам:
